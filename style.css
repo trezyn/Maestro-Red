@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-collapse{
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: rgb(255, 255, 255);
+    width: 170px;
+    z-index: 9999;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(194, 194, 194);
+}
+.navbar-collapse li:nth-child(6){
+    border: none;
+}
+.navbar-collapse li a:hover{
+    color: gray;
+}
+.navbar-collapse li a{
+    color: gray;
+}
+.navbar-collapse li{
+    border-bottom: 1px solid rgb(194, 194, 194);
+}
+.navbar-toggler{
+    color: transparent;
+}
+.navbar-toggler i{
+    color: black !important;
+    font-size: 28px;
+}
+.p-u{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+a,li{
+    list-style: none;
+    text-decoration: none !important;
+    gap: 20px;
+    color: black !important;
+    font-family: 'Poppins', sans-serif;
+}
+.p-u{
+    padding: 10px 0;
+    gap: 20px;
+}
+.p-u li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 2px;
+}
+.programs{
+    font-weight: 500;
+    padding: 7px 10px;
+    font-size: 14px;
+    background-color: #f22b29;
+    color: white !important;
+}
+.universities{
+    padding: 7px 10px;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: transparent;
+    border: none;
+}
+.enquire-now{
+    padding: 7px 10px;
+    border: 1px solid #f22b29;
+    font-weight: 300;
+}
+@media screen and (max-width:1200px){
+    .p-u{
+        width: 70%;
+    }
+    .popup .container .row{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+}
+@media screen and (max-width:771px){
+    .universities,
+    .enquire-now{
+        display: none !important;
+    }
+    .p-u{
+        gap: unset;
+    }
+    .navbar-collapse{
+        all: unset;
+        text-align: center;
+    }
+    .popup{
+        display: none !important;
+    }
+}
+@media screen and (max-width:380px){
+    .p-u{
+        width: 100px;
+    }
+}
+.navbar .container{
+    display: flex;
+}
+.navbar-brand span{
+    font-weight: bold;
+    color: #444;
+}
+.navbar-brand span:nth-child(1){
+    color: #3F88C5;
+}
+.navbar-brand span:nth-child(2){
+    color: #f22b29;
+}
+
+
+
+
+/* Styles for the pop-up container */
+.popup {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+}
+
+/* Style for the close button */
+#close-popup {
+    color: black;
+    border: none;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 10px;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+.popup-content .container{
+    background-color: transparent;
+}
+.popup-content .container .row div div .universities-logo{
+    width: 130px;
+    margin: 25px 0;
+    padding-bottom: 50px;
+}
+.popup-content .container .row div div img{
+    width: 100%;
+}
+.popup-content .container .row div div{
+    text-align: left;
+    border: 1px solid whitesmoke;
+}
+.popup-content .container .row div div h6{
+    font-size: 14px;
+    margin: 10px 0;
+}
+.popup .container .row .col div{
+    border: 1px solid white;
+}
+.popup .container .row{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr  1fr;
+}
